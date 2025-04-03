@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>下拉框测试页面</title>
+    <style>
+        body {
+            font-family: "微软雅黑", sans-serif;
+            padding: 20px;
+        }
+        select, button {
+            padding: 6px;
+            font-size: 16px;
+        }
+        #result {
+            margin-top: 15px;
+            font-weight: bold;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>学院选择</h2>
+
+    <form id="collegeForm" onsubmit="return showSelection();">
+        <label for="college">请选择学院：</label>
+        <select name="学院" id="college">
+            <option value="01">信息工程学院</option>
+            <option value="02">经济管理学院</option>
+            <option value="03">智能工程学院</option>
+            <option value="04">卫生学院</option>
+            <option value="05">体育学院</option>
+            <option value="06">数字媒体学院</option>
+        </select>
+
+        <br><br>
+        <button type="submit">提交</button>
+    </form>
+
+    <p id="result"></p>
+
+    <script>
+        function showSelection() {
+            const select = document.getElementById("college");
+            const selectedText = select.options[select.selectedIndex].text;
+            document.getElementById("result").innerText = "您选择的学院是：" + selectedText;
+            return false; // 阻止表单提交刷新页面
+        }
+    </script>
+
+</body>
+</html>

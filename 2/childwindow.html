@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>注册页面（子窗口）</title>
+    <style>
+        label {
+            display: block;
+            margin: 8px 0 4px;
+        }
+        input {
+            width: 200px;
+            padding: 6px;
+        }
+        button {
+            margin-top: 12px;
+            padding: 6px 12px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>注册百度账号</h2>
+
+    <form id="regForm">
+        <label for="username">用户名：</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="phone">手机号：</label>
+        <input type="text" id="phone" name="phone" required>
+
+        <label for="password">密码：</label>
+        <input type="password" id="password" name="password" required>
+
+        <br>
+        <button type="submit" id="register">注册</button>
+    </form>
+
+    <p id="result"></p>
+
+    <script>
+        document.getElementById("regForm").onsubmit = function (e) {
+            e.preventDefault(); // 阻止默认提交行为
+
+            // 获取输入的值
+            const username = document.getElementById("username").value;
+            const phone = document.getElementById("phone").value;
+            const password = document.getElementById("password").value;
+
+            // 设置默认合法值
+            const validUser = "admin";
+            const validPhone = "13800000000";
+            const validPass = "abc123456";
+
+            const result = document.getElementById("result");
+
+            if (username === validUser && phone === validPhone && password === validPass) {
+                result.style.color = "green";
+                result.innerText = "注册成功！";
+            } else {
+                result.style.color = "red";
+                result.innerText = "用户名或密码错误";
+            }
+        };
+    </script>
+
+</body>
+</html>

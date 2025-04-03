@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>显式等待示例</title>
+    <style>
+        #hidden-btn {
+            display: none;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>按钮将在 3 秒后出现</h2>
+
+    <button id="hidden-btn">点击我</button>
+
+    <script>
+        // 模拟延迟加载
+        setTimeout(function () {
+            const btn = document.getElementById("hidden-btn");
+            btn.style.display = "inline-block";
+
+            // 添加点击事件：跳转百度
+            btn.onclick = function () {
+                window.location.href = "https://www.baidu.com";
+            };
+        }, 3000); // 3秒后显示并绑定跳转
+    </script>
+
+</body>
+</html>
