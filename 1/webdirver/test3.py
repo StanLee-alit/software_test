@@ -18,6 +18,10 @@ search_box.send_keys('vscode.py')
 search_button = driver.find_element(By.CSS_SELECTOR, "#su") 
 search_button.click()
 
+print("打印所有cookie信息:")
+for cookie in driver.get_cookies():
+    print("%s=%s" % (cookie['name'], cookie['value']))
+
 
 wait = WebDriverWait(driver, 10)  
 try:

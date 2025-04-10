@@ -1,0 +1,109 @@
+[
+    {
+        "domain": "www.baidu.com",
+        "httpOnly": false,
+        "name": "BDSVRTM",
+        "path": "/",
+        "sameSite": "Lax",
+        "secure": false,
+        "value": "4"
+    },
+    {
+        "domain": ".baidu.com",
+        "expiry": 1775822717,
+        "httpOnly": false,
+        "name": "H_PS_PSSID",
+        "path": "/",
+        "sameSite": "Lax",
+        "secure": false,
+        "value": "61027_62341_62327_62328_62832_62845_62862_62883_62886_62927_62920"
+    },
+    {
+        "domain": "www.baidu.com",
+        "httpOnly": false,
+        "name": "cookies\u767e\u5ea6\u6d4b\u8bd5",
+        "path": "/",
+        "sameSite": "Lax",
+        "secure": true,
+        "value": "1234"
+    },
+    {
+        "domain": ".baidu.com",
+        "expiry": 1775822717,
+        "httpOnly": false,
+        "name": "ZFY",
+        "path": "/",
+        "sameSite": "None",
+        "secure": true,
+        "value": "xSAbmf:ArWu6YFuAjUh2ALM:B2UGSl1fMHc8X6E4zevJg:C"
+    },
+    {
+        "domain": ".baidu.com",
+        "expiry": 1775822717,
+        "httpOnly": false,
+        "name": "BAIDUID_BFESS",
+        "path": "/",
+        "sameSite": "None",
+        "secure": true,
+        "value": "9352B1B8929565DF09BFB7F398FD668F:FG=1"
+    },
+    {
+        "domain": ".baidu.com",
+        "expiry": 1744373117,
+        "httpOnly": false,
+        "name": "BA_HECTOR",
+        "path": "/",
+        "sameSite": "Lax",
+        "secure": false,
+        "value": "08aka5al242184egak0k210l271vba1jvfcvt22"
+    },
+    {
+        "domain": "www.baidu.com",
+        "httpOnly": false,
+        "name": "BD_HOME",
+        "path": "/",
+        "sameSite": "Lax",
+        "secure": false,
+        "value": "1"
+    },
+    {
+        "domain": ".baidu.com",
+        "expiry": 1775822717,
+        "httpOnly": false,
+        "name": "BAIDUID",
+        "path": "/",
+        "sameSite": "Lax",
+        "secure": false,
+        "value": "9352B1B8929565DF09BFB7F398FD668F:FG=1"
+    },
+    {
+        "domain": "www.baidu.com",
+        "expiry": 1745150717,
+        "httpOnly": false,
+        "name": "BD_UPN",
+        "path": "/",
+        "sameSite": "Lax",
+        "secure": false,
+        "value": "12314753"
+    },
+    {
+        "domain": ".baidu.com",
+        "expiry": 1778846717,
+        "httpOnly": false,
+        "name": "PSTM",
+        "path": "/",
+        "sameSite": "Lax",
+        "secure": false,
+        "value": "1744286713"
+    },
+    {
+        "domain": ".baidu.com",
+        "expiry": 1778846717,
+        "httpOnly": false,
+        "name": "BIDUPSID",
+        "path": "/",
+        "sameSite": "Lax",
+        "secure": false,
+        "value": "9352B1B8929565DF2B6BEE827E5BFFDD"
+    }
+]
