@@ -35,7 +35,7 @@ except Exception as load_error:
     exit()
 
 try:
-  driver.execute_script("sayHello('张三')")
+    driver.execute_script("sayHello('张三')")
 
 
 except NoSuchElementException as e:

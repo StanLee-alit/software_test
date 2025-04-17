@@ -6,9 +6,11 @@ from selenium.webdriver.edge.service import Service
 from webdriver_manager.microsoft import EdgeChromiumDriverManager
 import time
 
+
 def main():
-    driver = webdriver.Edge(service=Service(EdgeChromiumDriverManager().install()))
-    driver.maximize_window() 
+    driver = webdriver.Edge(service=Service(
+        EdgeChromiumDriverManager().install()))
+    driver.maximize_window()
 
     try:
         driver.get("https://www.baidu.com")
@@ -18,6 +20,7 @@ def main():
         time.sleep(5)
     finally:
         driver.quit()
+
 
 if __name__ == "__main__":
     main()
