@@ -1,0 +1,9 @@
+{
+    "recommendations": [
+        "adpyke.codesnap",
+        "jannchie.codetime",
+        "ms-python.autopep8",
+        "ms-python.python",
+        "ms-python.vscode-pylance"
+    ]
+}

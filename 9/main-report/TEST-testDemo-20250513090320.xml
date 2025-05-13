@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="testDemo-20250513090320" tests="4" file=".py" time="0.001" timestamp="2025-05-13T09:03:20" failures="1" errors="1" skipped="1">
+	<testcase classname="testDemo" name="test_success" time="0.000" timestamp="2025-05-13T09:03:20" file="main.py" line="9" />
+	<testcase classname="testDemo" name="test_fail" time="0.000" timestamp="2025-05-13T09:03:20" file="main.py" line="16">
+		<failure type="AssertionError" message="5 != 6"><![CDATA[Traceback (most recent call last):
+  File "D:\软件测试\软件测试python\9\main.py", line 17, in test_fail
+    self.assertEqual(5, 6)
+AssertionError: 5 != 6
+]]>		</failure>
+	</testcase>
+	<testcase classname="testDemo" name="test_error" time="0.001" timestamp="2025-05-13T09:03:20" file="main.py" line="19">
+		<error type="NameError" message="name 'a' is not defined"><![CDATA[Traceback (most recent call last):
+  File "D:\软件测试\软件测试python\9\main.py", line 20, in test_error
+    self.assertEqual(a, 6)  # type:ignore
+                     ^
+NameError: name 'a' is not defined
+]]>		</error>
+	</testcase>
+	<testcase classname="testDemo" name="test_skip" time="0.000" timestamp="2025-05-13T09:03:20" file="main.py" line="12">
+		<skipped type="skip" message="此用例跳过执行" />
+	</testcase>
+</testsuite>
