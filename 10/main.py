@@ -1,3 +1,11 @@
+#!/usr/bin/env -S python -v
+
+# #!/usr/bin/env -S python -v 是一条指令,
+# 告诉操作系统使用 env 工具,
+# 让它在用户的 PATH 中找到 python 解释器,
+# 并且在启动 python 解释器时,给它传递一个 -v 参数,
+# 然后用这个配置好的 python -v 来执行本脚本文件.
+
 import unittest
 import time
 from selenium import webdriver
@@ -43,7 +51,7 @@ class TestBaiduImproved(unittest.TestCase):
                 EC.title_contains(search_key)
             )
 
-            time.sleep(10)
+            time.sleep(2)
 
         except Exception as e:
             print(f"执行搜索'{search_key}'时出错:{e}")
