@@ -1,4 +1,7 @@
 #!/usr/bin/env python
+from turtle import right
+
+
 def coverage(x, y):
     gift = 0
     if x > 0 and y > 0:

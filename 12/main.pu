@@ -1,0 +1,21 @@
+@startuml peak_index_in_mountain_array
+title peak_index_in_mountain_array 活动图
+
+start
+
+:left, right = 0, len(arr)-1;
+
+while (left < right?) is (循环判断)
+  :mid = left + (right - left) // 2;
+  if (arr[mid] < arr[mid + 1]?) then (yes)
+    :left = mid + 1;
+  else (not yes)
+    :right = mid;
+  endif
+endwhile (循环结束)
+
+:return left;
+
+stop
+
+@enduml

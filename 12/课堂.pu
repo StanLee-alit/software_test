@@ -1,0 +1,25 @@
+@startuml 课堂作业
+' 判断输入等边,等腰,一般三角形
+title 课堂作业 活动图
+
+start
+
+:输入三角形的三条边a,b,c;
+
+if (a+b>c and a+c>b and b+c>a?) then (yes, 能构成三角形)
+  if (a==b and b==c?) then (yes, 三边相等)
+    :是等边三角形;
+  else (no, 不是三边都相等)
+    if (a==b or a==c or b==c?) then (yes, 有两边相等)
+      :是等腰三角形;
+    else (no, 三边各不相同)
+      :是一般三角形 (不等边三角形);
+    endif
+  endif
+else (no, 不能构成三角形)
+  :不是三角形;
+endif
+
+stop
+
+@enduml
